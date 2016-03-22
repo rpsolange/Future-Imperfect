@@ -4,11 +4,12 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		title Future Imperfect
-		link(href="assets/css/bootstrap.min.css" rel="stylesheet")
-		link(href="assets/css/font-awesome.min.css" rel="stylesheet")
-		link(rel="stylesheet" type="text/css" href="assets/sass/main.css")
+		link(href="css/font-awesome.min.css",rel="stylesheet")
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(href="https://fonts.googleapis.com/css?family=Raleway", rel='stylesheet', type='text/css')
+		link(rel="stylesheet", href="sass/main.css")
 	body
-		
+		-var title="FUTURE IMPERFECT"
 		header
 			nav.navbar.navbar-default
 				div.container-fluid
@@ -18,17 +19,61 @@ html(lang="en")
 							span.icon-bar
 							span.icon-bar
 							span.icon-bar
-						a.navbar-brand(href="#") FUTURE IMPERFECT
-					div.collapse.navbar-collapse#navbarCollapse
-						ul.nav.navbar-nav
+						a.navbar-brand(href="#")= title
+
+					div#navbarCollapse.collapse.navbar-collapse
+						ul.nav.navbar-nav.list
 							li
-								a(href="#") HOME
+								a.list-item(href="#") HOME 
 							li
-								a(href="#") ABOUT US
+								a.list-item(href="#") ABOUT US 
 							li
-								a(href="#") SERVICES
+								a.list-item(href="#") SERVICES
+							li
+								a.list-item(href="#") GALLERIES
+							li
+								a(href="#") CONTACT
+						ul.nav.navbar-nav.navbar-right
+							li
+								a.search(href="#") 
+									i.fa.fa-search
+
+		sectiont.banner
+			div.container.text-center
+				div.figure1
+					div.figure2
+						div.figure3
+				h2=title
+				p Another fine responsive site template by 
+					span html5 up
+		
+		section
+			div.container.image-content
+				div.row.first-new
+					div.col-md-9.texto
+						h3 MAGNA SED ADIPISCING
+						p Lorem ipsum dolor amet nullam consequat etiam feugiat
+					div.col-md-3.text-right.datos
+						h5 November 1, 2015
+						span Jane Doe
+						img(src="../images/avatar.jpg", alt="girl")
+				img.big-image(src="../images/pic01.jpg")
+				p.parrafo Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+				div.row.last-part
+					div.col-md-6
+						button.btn.btn-default(type="submit") Continue Reading
+					div.col-md-6.general.text-right
+						a.list-item(href="#")
+							span GENERAL
+						a.list-item(href="#")
+							i.fa.fa-heart 28
+						a(href="#")
+							i.fa.fa-comment 128
+		section.last-section
+			div.container.text-center
+				button.btn.btn-default(type="submit") < Previous Page
+				button.btn.btn-default(type="submit") Next Page >
 
 
-
-		script(src="assets/js/jquery.min.js")
-		script(src="assets/js/bootstrap.min.js")
+		script(src="js/jquery.min.js")
+		script(src="js/bootstrap.min.js")

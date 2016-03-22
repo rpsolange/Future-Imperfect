@@ -1,3 +1,141 @@
+body {
+  background-color: #F4F4F4;
+  font-family: 'Raleway', sans-serif; }
 
+header .navbar-default {
+  background-color: white;
+  border: 1px solid #E7E7E7;
+  border-radius: 0; }
+  header .navbar-default .navbar-brand {
+    border-right: 1px solid #E7E7E7;
+    font-size: 0.8em;
+    letter-spacing: 3px;
+    font-weight: bold; }
+  header .navbar-default .search {
+    border-left: 1px solid #E7E7E7; }
+    @media (max-width: 800px) {
+      header .navbar-default .search {
+        display: none; } }
+    header .navbar-default .search i {
+      color: #A9A9A9; }
+  header .navbar-default .list {
+    font-size: 0.8em;
+    margin-left: 10px;
+    letter-spacing: 2px; }
+    header .navbar-default .list .list-item:after {
+      content: "|";
+      padding-left: 20px; }
+      @media (max-width: 780px) {
+        header .navbar-default .list .list-item:after {
+          content: " "; } }
+
+.banner .figure1 {
+  overflow: hidden;
+  transform: rotate(120deg);
+  height: 120px;
+  width: 70px;
+  visibility: hidden;
+  position: relative;
+  left: 46%; }
+.banner .figure3, .banner .figure2 {
+  height: 100%;
+  width: 100%; }
+.banner .figure2 {
+  overflow: hidden;
+  transform: rotate(-60deg); }
+.banner .figure3 {
+  visibility: visible;
+  transform: rotate(-60deg);
+  background-image: url("../../images/logo.jpg");
+  background-position: center; }
+.banner h2 {
+  font-weight: bold;
+  letter-spacing: 6px;
+  margin-bottom: 3%; }
+.banner p {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.7em; }
+  .banner p span {
+    display: inline-block;
+    border-bottom: 1px dotted #A9A9A9; }
+
+.image-content {
+  background-color: white;
+  border: 1px solid #E7E7E7;
+  margin-top: 3%; }
+  .image-content .first-new {
+    border-bottom: 1px solid #E7E7E7; }
+    .image-content .first-new .datos, .image-content .first-new .texto {
+      letter-spacing: 3px; }
+    .image-content .first-new .texto {
+      padding: 4.6%; }
+      .image-content .first-new .texto h3 {
+        font-weight: bold; }
+      .image-content .first-new .texto p {
+        text-transform: uppercase;
+        font-size: 0.7em; }
+    .image-content .first-new .datos {
+      padding: 5% 3%;
+      border-left: 1px solid #E7E7E7; }
+      @media (max-width: 760px) {
+        .image-content .first-new .datos {
+          border-left: none;
+          border-top: 1px solid #E7E7E7; } }
+      .image-content .first-new .datos h5 {
+        font-weight: bold; }
+      .image-content .first-new .datos span {
+        border-bottom: 1px dotted #A9A9A9;
+        font-size: 0.7em;
+        text-transform: uppercase;
+        margin-right: 5%; }
+      .image-content .first-new .datos img {
+        border-radius: 50%; }
+  .image-content .big-image {
+    width: 100%;
+    margin: 2% auto;
+    padding: 2%; }
+  .image-content .parrafo {
+    padding: 0% 2%;
+    line-height: 25px; }
+  .image-content .last-part {
+    padding: 3% 2%; }
+    .image-content .last-part .btn {
+      padding: 2.5% 5%;
+      border-radius: 0;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.7em;
+      letter-spacing: 4px; }
+    .image-content .last-part .general {
+      font-size: 0.7em;
+      letter-spacing: 2px; }
+      .image-content .last-part .general a {
+        color: #A9A9A9; }
+        .image-content .last-part .general a span {
+          border-bottom: 1px dotted #A9A9A9; }
+      .image-content .last-part .general i {
+        margin-left: 2%; }
+      .image-content .last-part .general .list-item:after {
+        content: "|";
+        padding-left: 20px; }
+        @media (max-width: 780px) {
+          .image-content .last-part .general .list-item:after {
+            content: " "; } }
+
+.last-section {
+  padding: 3% 2%; }
+  .last-section .btn {
+    padding: 2.5% 5%;
+    border-radius: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 4px;
+    padding: 1.5% 4%;
+    margin-right: 2%;
+    background-color: transparent; }
+    .last-section .btn:active {
+      color: #A9A9A9; }
 
 /*# sourceMappingURL=main.css.map */

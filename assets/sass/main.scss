@@ -1,0 +1,181 @@
+$gray: #F4F4F4;
+$borde: 1px solid #E7E7E7;
+@mixin boton{
+	padding: 2.5% 5%;
+	border-radius: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 4px;
+}
+@mixin list-item{
+	&:after{
+		content: "|";
+		padding-left: 20px;
+		@media (max-width: 780px){
+		content: " ";
+		}
+	}
+	
+}
+body{
+	background-color: $gray;
+	font-family: 'Raleway', sans-serif;
+}
+header{
+	.navbar-default{
+		background-color: white;
+		border: $borde;
+		border-radius: 0;
+		.navbar-brand{
+			border-right: $borde;
+			font-size: 0.8em;
+			letter-spacing: 3px;
+			font-weight: bold;
+		}
+		.search{
+			border-left: $borde;
+			@media(max-width: 800px){
+				display: none;
+			}
+			i{
+				color: #A9A9A9;
+			}
+
+		}
+		.list{
+			font-size: 0.8em;
+			margin-left: 10px;
+			letter-spacing: 2px;
+			.list-item{
+				@include list-item;
+			}
+		}
+	}	
+}
+
+.banner{
+	.figure1{
+		overflow: hidden;
+		transform: rotate(120deg);
+		height: 120px;
+		width: 70px;
+		visibility: hidden;
+		position: relative;
+		left: 46%;
+	}
+	.figure3, .figure2{
+		height: 100%;
+		width: 100%;
+	}
+	.figure2{
+		overflow: hidden;
+		transform: rotate(-60deg);
+	}
+	.figure3{
+		visibility: visible;
+		transform: rotate(-60deg);
+		background-image: url("../../images/logo.jpg");
+		background-position: center;
+	}
+	h2{
+		font-weight: bold;
+		letter-spacing: 6px;
+		margin-bottom: 3%;
+	}
+	p{
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-size: 0.7em;
+		span{
+			display: inline-block;
+			border-bottom: 1px dotted #A9A9A9;
+		}
+	}
+}
+
+.image-content{
+	background-color: white;
+	border: $borde;
+	margin-top: 3%;
+	.first-new{
+		border-bottom: $borde;
+		.datos, .texto{
+			letter-spacing: 3px;
+		}
+		.texto{
+			padding: 4.6%;
+			h3{
+				font-weight: bold;
+			}
+			p{
+				text-transform: uppercase;
+				font-size: 0.7em;
+			}
+		}
+		.datos{
+			padding: 5% 3%;
+			border-left: $borde;
+			@media(max-width: 760px){
+				border-left: none;
+				border-top: $borde;
+			}
+			h5{
+				font-weight: bold;
+			}
+			span{
+				border-bottom: 1px dotted #A9A9A9;
+				font-size: 0.7em;
+				text-transform: uppercase;
+				margin-right: 5%;
+			}
+			img{
+				border-radius: 50%;
+			}
+		}
+	}
+	.big-image{
+		width: 100%;
+		margin: 2% auto;
+		padding: 2%;
+	}
+	.parrafo{
+		padding: 0% 2%;
+		line-height: 25px;
+	}
+	.last-part{
+		padding: 3% 2%;
+		.btn{
+			@include boton;
+		}
+		.general{
+			font-size: 0.7em;
+			letter-spacing: 2px;
+			a{
+				color: #A9A9A9;
+				span{
+					border-bottom: 1px dotted #A9A9A9;
+				}
+			}
+			i{
+				margin-left: 2%;
+			}
+			.list-item{
+				@include list-item;
+			}
+		}
+	}
+}
+
+.last-section{
+	padding: 3% 2%;
+	.btn{
+		@include boton;
+		padding: 1.5% 4%;
+		margin-right: 2%;
+		background-color: transparent;
+		&:active{
+			color: #A9A9A9;
+		}
+	}
+}

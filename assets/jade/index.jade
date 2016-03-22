@@ -10,8 +10,25 @@ html(lang="en")
 	body
 		
 		header
-			nav
+			nav.navbar.navbar-default
+				div.container-fluid
+					div.navbar-header
+						button.navbar-toggle(type="button" data-toggle="collapse" data-target="#navbarCollapse")
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						a.navbar-brand(href="#") FUTURE IMPERFECT
+					div.collapse.navbar-collapse#navbarCollapse
+						ul.nav.navbar-nav
+							li
+								a(href="#") HOME
+							li
+								a(href="#") ABOUT US
+							li
+								a(href="#") SERVICES
 
 
-		script(src="js/jquery-min.js")
-		script(src="./js/bootstrap.min.js")
+
+		script(src="assets/js/jquery.min.js")
+		script(src="assets/js/bootstrap.min.js")
